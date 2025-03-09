@@ -1,0 +1,4 @@
+*.pyc
+bot/config.py
+bot/logic2.py
+
