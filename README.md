@@ -3,7 +3,7 @@
 *Hi there! this repository is about my telegram bot!*
 ***
 ##  What bot can do?
-###  mini-game
+###  projects
 it can contain your projects
 
 ***
