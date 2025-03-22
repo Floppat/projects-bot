@@ -129,6 +129,12 @@ WHERE user_id = ? AND project_id = ? """
 WHERE skill_id = ? AND project_id = ? """
         self.__executemany(sql, [(skill_id, project_id)])
 
+    def add_column(self, table_name,new_column_name,new_column_type):
+        conn = sqlite3.connect(self.database)
+        with conn:
+            conn.execute(f"ALTER TABLE {table_name} ADD COLUMN {new_column_name} {new_column_type}")
+            conn.commit()
+
 
 if __name__ == '__main__':
     manager = DB_Manager(DATABASE)
